@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleformulario.css">
+    <title>Contacta conmigo</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../images/logo.png" alt="Logo" />
+      <p>Adrian Garcia - Contacta</p>
+    </header>
+    <div class="whole">
+      <nav>
+        <div class="navinicio"><a href="../index.html">Inicio</a></div>
+        <div class="navcv"><a href="../CV/cv.html">CV</a></div>
+        <div class="navproyecto"><a href="../Proyecto/proyecto.html">Sobre el proyecto</a></div>7
+        <div class="navarte"><a href="../Galeria/galeria.html">Galeria de arte</a></div>
+      </nav>
+      <main>
+        <div class="formulario">
+        <form action="basededatos.txt" method="get">
+          <p>Nombre<input type="text" name="Nombre" id="formname"></p>
+          <p>Apellidos<input type="text" name="Apellidos" id="formapellidos" required></p>
+          <p>Fecha de nacimiento<input type="date" name="Fecha de Nacimiento" id="formnacimiento" required></p>
+          <p>Correo electrónico<input type="email" name="Email" id="formemail" required></p>
+          <p>Telefono de contacto<input type="text" name="Telefono" id="formtelefono" maxlength="9"></p>
+          <p>Nos referimos a usted como:</p> 
+            <p class="Gender"><input type="radio" name="Gender" id="formmale"><label for="formmale">Hombre</label> </p>
+            <p class="Gender"><input type="radio" name="Gender" id="formfemale"> <label for="formfemale">Mujer</label></p>
+            <p class="Gender"><input type="radio" name="Gender" id="formother"> <label for="formother">Otro</label></p>
+          <p>Introduzca su mensaje <input type="textarea" class="Area" id="formarea"></p>
+          <br>
+          <p>Esta forma de contactar es por motivos de negocio <input type="checkbox" name="Negocio" id="formnegocio"></p>
+          <p>Por favor, muestre su nivel de felicidad con la página web.<input type="range"></p>
+          <br>
+          <p><input class="Borrar" type="reset" value="Borrar Todo"></p>
+          <p><input class="Enviar" type="submit" id="Enviar"></p>
+          <p>Por favor, recuerde que solo hay una persona a cargo de responder. Tenga paciencia.</p>
+        </form>
+        </div>
+      </main>
+      <aside>
+        <h3>MUESTRAS</h3>
+        <div class="miniatura1">
+        </div>
+        <div class="miniatura2">
+        </div>
+        <div class="miniatura3">
+        </div>
+        <div class="miniatura4">
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <pre>Ninguna de las imágenes usadas en esta página cuentan con derechos de <br>autor más allá de los pertenecientes a Adrián García, creador de la página.</pre>
+    </footer>
+  </body>
+</html>
